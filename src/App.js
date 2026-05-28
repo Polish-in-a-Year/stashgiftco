@@ -67,7 +67,8 @@ export default function App() {
   return isAdmin ? <Admin /> : (
     <div className="App">
       <header className="header">
-        <h1>🎁 Stash Gift Co.</h1>
+        <img src="/logo.png" alt="Stash Gift Co Logo" className="logo-img" />
+<h1>Stash Gift Co.</h1>
         <p>Small Batch · Handmade · Heartfelt</p>
       </header>
       
