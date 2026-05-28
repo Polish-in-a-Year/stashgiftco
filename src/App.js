@@ -68,6 +68,9 @@ export default function App() {
     <div className="App">
       <header className="header">
   <img src={require('./logo.png')} alt="Stash Gift Co - Small Batch Handmade Heartfelt" className="logo-img" />
+  <div className="header-text">
+    <p>I'm using up my stash of supplies to create beautiful, custom handmade gifts and goodies on-demand! Fill out the form below with your details, and I'll suggest three personalized gift options. Pick the one you love, and once it ships, send payment via Venmo or Zelle. Shipping can go to you or the recipient. Gift wrapping is optional, but highly encouraged. You know it'll be so well done!</p>
+  </div>
 </header>
       
       <main className="container">
