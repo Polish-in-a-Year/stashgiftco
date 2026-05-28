@@ -31,6 +31,11 @@ body {
   text-align: left;
 }
 
+.header-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .header-text p {
   color: #4b5563;
   font-size: 0.95em;
