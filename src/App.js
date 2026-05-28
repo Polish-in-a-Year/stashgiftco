@@ -19,7 +19,7 @@ export default function App() {
     colors: '',
     budget: '',
     personalization: '',
-    wrappingStyle: '',
+    giftWrapping: 'Yes',
     cardText: ''
   });
 
@@ -57,7 +57,7 @@ export default function App() {
       colors: '',
       budget: '',
       personalization: '',
-      wrappingStyle: '',
+      giftWraping: 'Yes',
       cardText: ''
     });
   };
@@ -69,7 +69,7 @@ export default function App() {
       <header className="header">
   <img src={require('./logo.png')} alt="Stash Gift Co - Small Batch Handmade Heartfelt" className="logo-img" />
   <div className="header-text">
-    <p>I'm using up my stash of supplies to create beautiful,<br />custom handmade gifts and goodies on-demand!<br />Fill out the form below with your details, and I'll suggest three personalized gift options. Pick the one you love, and once it ships, send payment via Venmo or Zelle. Shipping can go to you or the recipient. Gift wrapping is optional, but highly encouraged.<br />Making your life easier one project at a time!</p>
+    <p>I'm using up my stash of supplies to create beautiful, custom handmade gifts and goodies on-demand!<br />Fill out the form below with your details, and I'll suggest three personalized gift options. Pick the one you love, and once it ships, send payment via Venmo or Zelle. Shipping can go to you or the recipient.<br />Making your life easier, one project at a time!</p>
   </div>
 </header>
       
@@ -143,13 +143,22 @@ export default function App() {
             <textarea name="personalization" value={formData.personalization} onChange={handleChange} placeholder="Names, initials, special requests?" />
           </div>
 
-          <div className="form-group">
-            <label>Wrapping Style</label>
-            <input type="text" name="wrappingStyle" value={formData.wrappingStyle} onChange={handleChange} placeholder="e.g., Elegant, Fun, Minimalist" />
-          </div>
+<div className="form-group">
+  <label>Do you want gift wrapping included?</label>
+  <div className="radio-group">
+    <label className="radio-label">
+      <input type="radio" name="giftWrapping" value="Yes" checked={formData.giftWrapping === 'Yes'} onChange={handleChange} />
+      Yes
+    </label>
+    <label className="radio-label">
+      <input type="radio" name="giftWrapping" value="No" checked={formData.giftWrapping === 'No'} onChange={handleChange} />
+      No
+    </label>
+  </div>
+</div>
 
           <div className="form-group">
-            <label>Card Message/Text</label>
+            <label>Card Message/Text (Optional with gift wrapping.)</label>
             <textarea name="cardText" value={formData.cardText} onChange={handleChange} placeholder="What would you like the card to say?" />
           </div>
 
