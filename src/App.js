@@ -103,10 +103,10 @@ export default function App() {
             <input type="date" name="shipDate" value={formData.shipDate} onChange={handleChange} required />
           </div>
 
-          <div className="form-group">
-            <label>Shipping Address *</label>
-            <textarea name="shippingAddress" value={formData.shippingAddress} onChange={handleChange} placeholder="Street, City, State, ZIP" required />
-          </div>
+ <div className="form-group">
+  <label>Shipping Label Information *</label>
+  <textarea name="shippingAddress" value={formData.shippingAddress} onChange={handleChange} placeholder="Recipient Name&#10;Street Address&#10;City, State ZIP" required />
+</div>
 
           <div className="form-group">
             <label>Recipient's Phone Number *</label>
@@ -165,7 +165,7 @@ export default function App() {
           <button type="submit" className="submit-btn">Submit Order Request</button>
         </form>
 
-        <p className="footer-note">All requests will be taken into consideration. No materials will be held until the order proposal is confirmed.</p>
+    <p className="footer-note">All requests will be taken into consideration. No materials will be held until the order proposal is confirmed.<br /><br /><small>Site created by Allison O'Dell 2026</small></p>
       </main>
     </div>
   );
