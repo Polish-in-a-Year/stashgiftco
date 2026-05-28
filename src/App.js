@@ -67,14 +67,14 @@ export default function App() {
   return isAdmin ? <Admin /> : (
     <div className="App">
       <header className="header">
-        <img src="/logo.png" alt="Stash Gift Co Logo" className="logo-img" />
+       <img src={require('./logo.png')} alt="Stash Gift Co Logo" className="logo-img" />
 <h1>Stash Gift Co.</h1>
         <p>Small Batch · Handmade · Heartfelt</p>
       </header>
       
       <main className="container">
         <h2>Custom Gift Order Request</h2>
-        <p className="note">Tell us about your gift, and we'll curate 3 beautiful options from our stash. Expect our suggestions within 72 hours.</p>
+        <p className="note">Describe your gift, and Allison will send you three options from her stash. Expect the suggestions within 72 hours.</p>
         
         <form onSubmit={handleSubmit} className="form">
           <div className="form-group">
