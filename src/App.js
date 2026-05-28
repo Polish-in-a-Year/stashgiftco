@@ -67,10 +67,8 @@ export default function App() {
   return isAdmin ? <Admin /> : (
     <div className="App">
       <header className="header">
-       <img src={require('./logo.png')} alt="Stash Gift Co Logo" className="logo-img" />
-<h1>Stash Gift Co.</h1>
-        <p>Small Batch · Handmade · Heartfelt</p>
-      </header>
+  <img src={require('./logo.png')} alt="Stash Gift Co - Small Batch Handmade Heartfelt" className="logo-img" />
+</header>
       
       <main className="container">
         <h2>Custom Gift Order Request</h2>
