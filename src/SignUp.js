@@ -8,6 +8,7 @@ export default function SignUp() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [displayName, setDisplayName] = useState('');
   const [roleType, setRoleType] = useState('customer');
+  const [newsletterOptIn, setNewsletterOptIn] = useState(true);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const { signUp } = useAuth();
@@ -28,7 +29,7 @@ export default function SignUp() {
 
     setLoading(true);
     try {
-      await signUp(email, password, roleType, displayName);
+      await signUp(email, password, roleType, displayName, newsletterOptIn);
       // Redirect handled by app routing
     } catch (err) {
       setError(err.message);
@@ -87,6 +88,17 @@ export default function SignUp() {
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
+          </div>
+
+          <div className="form-group">
+            <label>
+              <input
+                type="checkbox"
+                checked={newsletterOptIn}
+                onChange={(e) => setNewsletterOptIn(e.target.checked)}
+              />
+              Yes, send me updates about new makers and Stash Gift Co news
+            </label>
           </div>
 
           {error && <p className="error">{error}</p>}

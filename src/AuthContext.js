@@ -44,7 +44,7 @@ export function AuthProvider({ children }) {
     return unsubscribe;
   }, []);
 
-  const signUp = async (email, password, roleType, displayName) => {
+  const signUp = async (email, password, roleType, displayName, newsletterOptIn = true) => {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const uid = userCredential.user.uid;
 
@@ -57,6 +57,7 @@ export function AuthProvider({ children }) {
       roleType,
       roles: isPrimaryAdmin ? ['primary_admin'] : [roleType],
       createdAt: new Date().toISOString(),
+newsletterOptIn: newsletterOptIn || true,
       contactInfo: {
         email,
         phone: '',

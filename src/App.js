@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './AuthContext';
+import LandingPage from './LandingPage';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 import CustomerDashboard from './CustomerDashboard';
@@ -17,9 +18,10 @@ function AppContent() {
     <Routes>
       {!user ? (
         <>
+          <Route path="/" element={<LandingPage />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="*" element={<Navigate to="/signin" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </>
       ) : (
         <>
