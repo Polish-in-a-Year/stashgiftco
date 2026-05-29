@@ -27,7 +27,6 @@ export default function LandingPage() {
         </div>
 
         <div className="info-section">
-          <p className="tagline">Small Batch · Handmade · Heartfelt</p>
           
       <div className="description">
             <h2 className="main-heading">Hey, who told you about us?</h2>

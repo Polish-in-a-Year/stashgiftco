@@ -85,10 +85,11 @@ margin-bottom: 5px;
 
 .description .sub-heading {
   font-family: 'Rock Salt', cursive;
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-weight: 400;
   color: #4b5563;
-  margin-bottom: 20px;
+  margin-top: -10px;
+  margin-bottom: 25px;
   text-transform: none;
   letter-spacing: 0px;
   border: none;
