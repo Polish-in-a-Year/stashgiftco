@@ -14,10 +14,20 @@ const firebaseConfig = {
   measurementId: "G-PMQD8WLQ71"
 };
 
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getDatabase(app);
+let app;
+let auth;
+let db;
 
+try {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+  db = getDatabase(app);
+} catch (error) {
+  // App already initialized
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+  db = getDatabase(app);
+}
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
