@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@400;700&display=swap');
+
 .landing-page {
   background: #fadddd;
   min-height: 100vh;
@@ -40,7 +42,8 @@
 }
 
 .logo-section {
-  margin-bottom: 40px;
+  margin-top: 5px;
+margin-bottom: 5px;
   text-align: center;
 }
 
@@ -70,6 +73,25 @@
   line-height: 1.8;
   margin-bottom: 40px;
   font-size: 0.95em;
+}
+
+.description .main-heading {
+  font-family: 'Lilita One', cursive;
+  font-size: 2em;
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.description .sub-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #4b5563;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
 }
 
 .description p {
