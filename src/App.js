@@ -75,7 +75,7 @@ export default function App() {
       
       <main className="container">
         <h2>Custom Gift Order Request</h2>
-        <p className="note">Describe your gift, and you will receive three gift options to choose for your project. Expect the suggestions within 72 hours.</p>
+        <p className="note">Describe your gift, and you will receive three suggestions to choose for your project. Expect them to arrive within 72 hours.</p>
         
         <form onSubmit={handleSubmit} className="form">
           <div className="form-group">
