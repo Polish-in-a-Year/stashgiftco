@@ -33,7 +33,7 @@ export default function LandingPage() {
             <h2>Welcome to the best kept secret for handmade goods!</h2>
             <p>We’re a different kind of online marketplace.</p>
             <br />
-            <p>Here, you share details of your gifting need by adding a Project Request. You can specify a maker or open it up to all our makers. Creativity takes over and suggestions are prepared for you to consider. When you accept a suggestion, it’s made for you to give (or keep)!</p>
+            <p>Here, you share details about the gift you need by adding a Project Request. You can specify a maker or open it up to all our makers. Creativity takes over and suggestions are prepared for you to consider. When you accept a suggestion, it’s made for you to give (or keep)!</p>
             <br />
             <p>Small batch. Handmade. Heartfelt.</p>
           </div>
