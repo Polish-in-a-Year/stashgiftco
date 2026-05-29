@@ -31,7 +31,7 @@ export default function LandingPage() {
       <div className="description">
             <h2 className="main-heading">Hey, who told you about us?</h2>
             <h3 className="sub-heading">Yeah, we do gifts different.</h3>
-            <p>Here, you share information about the type of gift you need. Then we pass along some suggestions.<br />It's all hush-hush. When you accept a suggestion,<br />it's made for you to give (or keep)!</p>
+            <p>Here, you share information about the type of gift you need, and we pass along some ideas.<br />It's all hush-hush.<br />When you agree,it's made for you to give (or keep)!</p>
             <br />
             <p>Let's just keep this between us.</p>
           </div>
