@@ -69,7 +69,7 @@ export default function App() {
       <header className="header">
   <img src={require('./logo.png')} alt="Stash Gift Co - Small Batch Handmade Heartfelt" className="logo-img" />
   <div className="header-text">
-    <p>I'm using up my stash of supplies to create beautiful, custom handmade gifts and goodies on-demand!<br />Fill out the form below with your details, and I'll suggest three personalized gift options. Pick the one you love, and once it ships, send payment via Venmo or Zelle. Shipping can go to you or the recipient.<br />Making your life easier, one project at a time!</p>
+    <p>Allison, our founder, created this website for makers to use up their stash of supplies to create beautiful, custom handmade gifts and goodies on-demand!<br />Fill out the form below with your details, and you'll receive three personalized gift options. Pick the one you love, and once it ships, send payment as directed. Shipping can go to you or the recipient.<br />Making your life easier, one project at a time!</p>
   </div>
 </header>
       
@@ -165,7 +165,9 @@ export default function App() {
           <button type="submit" className="submit-btn">Submit Order Request</button>
         </form>
 
-    <p className="footer-note">All requests will be taken into consideration. No materials will be held until the order proposal is confirmed.<br /><br /><small>Site created by Allison O'Dell 2026</small></p>
+  <p className="footer-note">All requests will be taken into consideration. No materials will be held until the order proposal is confirmed.<br /><br /><small>Created by Allison O'Dell</small></p>
+
+<p className="footer-note" style={{marginTop: '30px', fontStyle: 'italic'}}>If you know a maker with a stash and a love of making gifts, have them contact <a href="mailto:Allison@AllisonODell.com" style={{color: '#f472b6', textDecoration: 'none'}}>Allison@AllisonODell.com</a> to apply to join Stash Gift Co.</p>
       </main>
     </div>
   );
